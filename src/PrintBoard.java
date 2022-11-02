@@ -34,7 +34,7 @@ public class PrintBoard {
             board2[0] = a;
             board2[1] = b;
             board2[2] = c2;
-            System.out.println(a + " " + b + " " + c2);
+            System.out.println(a + " " + b + " " + c2 + " Move to get there: " + c2 + ", " + 2);
         }
         for(int b2 = b-1; b2 >= 0; b2--) {
             int[] board3 = new int[10];
@@ -42,26 +42,26 @@ public class PrintBoard {
             board3[1] = b2;
             board3[2] = c;
             if (b2 < c){
-                System.out.println(a + " " + b2 + " " + b2);
+                System.out.println(a + " " + b2 + " " + b2 + " Move to get there: " + b2 + ", " + 1);
             }
             else {
-                System.out.println(a + " " + b2  + " " + c);
+                System.out.println(a + " " + b2  + " " + c + " Move to get there: " + b2 + ", " + 1);
             }
 
         }
         for(int a2 = a-1; a2 >= 1; a2--){
-            int[] board2 = new int[10];
-            board2[0] = a2;
-            board2[1] = b;
-            board2[2] = c;
+            int[] board4 = new int[10];
+            board4[0] = a2;
+            board4[1] = b;
+            board4[2] = c;
             if (a2 < b && a2 < c ){
-                System.out.println(a2 + " " + a2 + " " + a2);
+                System.out.println(a2 + " " + a2 + " " + a2 + " Move to get there: " + a2 + ", " + 0);
             }
             else if (a2 < b){
-                System.out.println(a2 + " " + a2 + " " + c);
+                System.out.println(a2 + " " + a2 + " " + c + " Move to get there: " + a2 + ", " + 0);
             }
             else {
-                System.out.println(a2 + " " + b + " " + c);
+                System.out.println(a2 + " " + b + " " + c + " Move to get there: " + a2 + ", " + 0);
             }
 
 
